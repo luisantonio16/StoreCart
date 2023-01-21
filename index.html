@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Shoes</title>
     <link rel="shortcut icon" href="/assets/shoesicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -28,6 +29,11 @@
 
         </nav>
 
+        <div class="cart-container" id="cart-container">
+           
+        
+        </div>
+
         <div class="header--container">
             <div class="header--titles container">
                 <h1 class="header-tilte">Store Shoes</h1>
@@ -39,10 +45,55 @@
             </div>
            
         </div>
-
-       
     </header>
 
+
+
+    <main class="main">
+        <div class="shoes container">
+            <div class="nav--logo">
+                <h2 class="nav-logo-titles">Shoes</h2>
+                <img src="/assets/shoesicon.ico" class="logo" alt="">
+            </div>
+            <div class="line"></div>
+            <div class="shoes-container">
+                <div class="shoes-box">
+                    <div class="shoes-box-img">
+                        <img src="/assets/jordan10.jpg" class="shoes-img" alt="">
+                    </div>
+                    <h2 class="shoes-box-title">Jordan 4 Metalic Purple</h2>
+                    <img src="/assets/star.jpg" class="box--img" alt="">
+                    <div class="shoes-box-prices">
+                       <h3 class="shoes-box-text">Price:</h3>
+                       <h3 class="box-shoes-price"><Span>USD</Span> $400</h3>
+                    </div>
+                    <div class="box-shoes-btns">
+                        <button class="shoes-box-btn">Add to Cart</button>
+                    </div>  
+                </div>  
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer--container ">
+            <div class="footer--logo">
+                <h2 class="footer-logo-titles">Shoes</h2>
+                <img src="/assets/shoeswhite.ico" class="logo" alt="">
+            </div>
+           
+            <div class="footer-contac">
+                <i class='bx bxl-facebook-square'>Facebook</i>
+                <i class='bx bxl-instagram'>Instagram</i>
+                <i class='bx bxl-whatsapp'>Whatsapp</i>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="/js/shoes.js"></script>
     
 </body>
 </html>

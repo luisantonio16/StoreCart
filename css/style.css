@@ -7,6 +7,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.header{
+    position: relative;
+}
 .container{
     width: 90%;
     max-width: 1200px;
@@ -21,6 +24,7 @@
     align-items: center;
     margin: auto;
     margin-bottom: 50px;
+    z-index: 0;
 }
 .nav--logo{
     display: flex;
@@ -54,10 +58,10 @@
     justify-content: center;
 }
 .nav-cart-img{
-    width: 50px;
+    width: 60px;
 }
 .header--container{
-    background-image:linear-gradient(135deg, #4b749f 20%, #243748 90%), url("/assets/fondo2.jpg");
+    background-image:linear-gradient(135deg, #4b749f 20%, #243748 70%), url("/assets/fondo2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -89,4 +93,147 @@
     color: #fff;
     font-size: 18px;
     border-radius: 10px;
+}
+
+
+/*Table Cart*/
+.cart-container{
+    position: absolute;
+    top: 100px;
+    right: 8px;
+    border: 2px solid black;
+    width: 400px;
+    z-index: 10;
+    background-color: #fff;
+}
+.img-table{
+    width: 90px;
+}
+
+.cart-table{
+    width: 100%;
+   
+}
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+thead{
+    background-color: #243748; 
+}
+th{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 10px;
+}
+td{
+    padding: 15px;
+    border-bottom: 1px solid #243748;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/*  Main*/
+.line{
+    height: 2px;
+    width: 190px;
+    background-color: #243748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    border-radius: 10px;
+}
+.shoes-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.shoes-box{
+    width: 30%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 20px 20px;
+}
+.shoes-box-img{
+    width: 100%;
+    height: 50%;
+}
+.shoes-box-img img{
+    width: 100%;
+    height: 100%;
+
+}
+.shoes-box-title{
+    color: #243748;
+    font-weight: 700;
+    padding: 10px;
+}
+.shoes-box-prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.shoes-box-text{
+    color: #3B7197;
+    font-weight: 400;
+    font-size: 24px;
+}
+.box--img{
+    width: 100px;
+    margin: 10px;
+}
+.box-shoes-price{
+    color: #243748;
+    font-weight: 500;
+    font-size: 24px;
+}
+.shoes-box-btn{
+    display: block;
+    padding: 15px 25px;
+    width: 160px;
+    border: none;
+    background-color: #243748;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;  
+}
+
+
+
+
+/*Footer*/
+.footer{
+    background-image:linear-gradient(135deg, #4b749f 20%, #243748 90%);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer--logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.footer--logo h2{
+    color: #fff;
+    font-size: 30px;
+}
+.footer-contac{
+    font-size: 25px;
+    margin: 10px 0;
+    color: #fff;
+}
+.footer-contac i{
+    margin: 0 20px;
+    cursor: pointer;
 }
